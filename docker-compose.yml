@@ -13,7 +13,7 @@ services:
       - 80:80
   kdm-lab:
     container_name: kdm-lab
-    image: sawlinthant/kdm-lab:latest
+    image: sawlinthant/kdm-lab-web:latest
     ports:
       - 9090:3001
   kdm-lab-api:
