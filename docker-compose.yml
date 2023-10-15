@@ -4,15 +4,15 @@ services:
   lab-nginx:
     container_name: kdm-lab-nginx
     depends_on:
-      - kdm-lab-web
+      - kdm-lab
       - kdm-lab-api
     build:
       dockerfile: Dockerfile
       context: ./nginx
     ports:
       - 80:80
-  kdm-lab-web:
-    container_name: kdm-lab-web
+  kdm-lab:
+    container_name: kdm-lab
     image: sawlinthant/kdm-lab-web:latest
     ports:
       - 9090:3001
